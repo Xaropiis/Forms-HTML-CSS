@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="forms.css" media="screen">
+    <title>[Tanker] Closed Beta - Cadastro</title>
+</head>
+<body>
+    <br>
+    <div>
+        <h1 id="titulo">Tanker - Batalhando entre Gigantes!</h1>
+        <p id="chamada">Faça o seu cadastro para o nosso Closed Beta.</p>
+    </div>
+   <br>
+    <form>
+        <fieldset class="quadros" id="q1">
+            <div class="campo">
+                <label strong for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="idade"><strong>Idade:</strong></label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+            <div class="campo">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="quadros" id="q2">
+            <div class="campo">
+                <label><strong>Qual plataforma você utiliza para jogar?</strong></label>
+                <br>
+                <input type="checkbox" id="plataforma1" name="plataforma1" value="Xbox One">
+                <label for="plataforma1">Xbox One</label>
+                <input type="checkbox" id="plataforma2" name="plataforma2" value="Xbox Series X/S">
+                <label for="plataforma2">Xbox Series X/S</label>
+                <input type="checkbox" id="plataforma3" name="plataforma3" value="Playstation 4">
+                <label for="plataforma3">Playstation 4</label>
+                <input type="checkbox" id="plataforma4" name="plataforma4" value="Playstation 5">
+                <label for="plataforma4">Playstation 5</label>
+                <input type="checkbox" id="plataforma5" name="plataforma5" value="Nintendo Switch">
+                <label for="plataforma5">Nintendo Switch</label>
+                <input type="checkbox" id="plataform6" name="plataforma6" value="PC Steam">
+                <label for="plataforma6">PC Steam</label>
+            </div>
+            <br>
+            <div class="campo">
+                <label for="nick"><strong>Nickname:</strong></label>
+                <input type="text" id="nick" name="nick" required>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="quadros" id="q3">
+            <div class="campo"
+                <label for="produtor"><strong>É produtor de conteúdo? Produz em qual plataforma?</strong></label>
+                <br>
+                <select id="produtor" required>
+                    <option selected >Não sou produtor de conteúdo.</option>
+                    <option>Produzo conteúdo para o TikTok.</option>
+                    <option>Produzo conteúdo para o Youtube.</option>
+                    <option>Produzo conteúdo para a Twitch.</option>
+                </select>
+            </div>
+            <br>
+            <div class="campo">
+                <label for="texto"><strong>Neste primeiro momento estamos procurando jogadores interessados em cooperar com o desenvolvimento do jogo e da nossa comunidade. Caso aprovado no Closed Beta, como pretende fazer isso?</strong></label>
+                <br>
+                <textarea rows="10" style="width: 26em" id="texto" name="texto"></textarea>
+        </fieldset>
+        <br>
+        <div class="campo" id="enviar">
+            <button type="submit" class="enviar" onsubmit="">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
